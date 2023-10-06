@@ -23,6 +23,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'view_component'
 
 group :development, :test do
+  gem 'capybara'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry-byebug', '~> 3.0'
