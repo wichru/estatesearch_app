@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'dry-struct'
+
 class ApplicationEntity < Dry::Struct
   extend ::ActiveModel::Naming
 

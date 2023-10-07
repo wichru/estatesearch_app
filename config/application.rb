@@ -35,5 +35,8 @@ module EstatesearchApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.app_name = 'Estate Search'
+    config.dog_ceo = ActiveSupport::OrderedOptions.new
+    config.dog_ceo.api_url = ENV.fetch('DOG_CEO_API_URL', 'https://dog.ceo/api/')
   end
 end

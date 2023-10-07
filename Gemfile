@@ -7,6 +7,7 @@ ruby '3.2.1'
 
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
+gem 'dry-struct'
 gem 'faraday', '~> 2.7'
 gem 'faraday-multipart', '~> 1.0'
 gem 'jbuilder'

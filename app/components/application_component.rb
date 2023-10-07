@@ -13,10 +13,4 @@ class ApplicationComponent < ViewComponent::Base
       instance_variable_set("@#{key}", value)
     end
   end
-
-  def render_inline = render_in(ActionController::Base.helpers)
-
-  private
-
-  def before_render = validate!
 end

@@ -2,11 +2,11 @@
 
 module Forms
   class BaseFieldComponent < ApplicationComponent
-    FIELD_CLASSES = 'form-control rounded'
-    LABEL_CLASSES = 'd-block small font-weight-medium mb-1'
+    FIELD_CLASSES = 'form-control-lg rounded mb-3'
+    LABEL_CLASSES = 'form-label mb-3 d-block small font-weight-medium mb-1'
 
     # rubocop:disable Metrics/ParameterLists
-    def initialize(form:, field: default_field, id: nil, label: nil, required: nil, **root_options)
+    def initialize(form:, autofocus: nil, field: default_field, id: nil, label: nil, name: nil, required: nil, **root_options)
       super(**root_options)
       @form = form
       @field = field
@@ -14,11 +14,13 @@ module Forms
       @label = label
       @required = required
       @custom_field_options = {
+        autofocus:,
         id: @id,
         required: ('required' if required)
       }
       @custom_label_options = {
-        for: @id
+        for: @id,
+        name:,
       }.compact
     end
     # rubocop:enable Metrics/ParameterLists
@@ -45,6 +47,6 @@ module Forms
 
     private
 
-    attr_reader :form, :field
+    attr_reader :form, :field, :label
   end
 end
