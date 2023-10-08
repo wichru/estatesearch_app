@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Ui
   class ButtonComponent < ApplicationComponent
     attr_reader :type

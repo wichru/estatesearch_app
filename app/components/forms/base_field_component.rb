@@ -6,7 +6,8 @@ module Forms
     LABEL_CLASSES = 'form-label mb-3 d-block small font-weight-medium mb-1'
 
     # rubocop:disable Metrics/ParameterLists
-    def initialize(form:, autofocus: nil, field: default_field, id: nil, label: nil, name: nil, required: nil, **root_options)
+    def initialize(form:, autofocus: nil, field: default_field, id: nil, label: nil, name: nil, required: nil,
+                   **root_options)
       super(**root_options)
       @form = form
       @field = field
@@ -20,7 +21,7 @@ module Forms
       }
       @custom_label_options = {
         for: @id,
-        name:,
+        name:
       }.compact
     end
     # rubocop:enable Metrics/ParameterLists
