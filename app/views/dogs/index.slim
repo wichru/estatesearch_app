@@ -1,0 +1,7 @@
+.container.my-5
+  .row
+    .col-md-6
+      = render_page_header
+      = render Dogs::NewFormComponent.new
+    .col-md-6
+      = turbo_frame_tag 'dog-image', data: { target: "refresh-frame.frame" }

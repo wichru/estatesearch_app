@@ -1,0 +1,8 @@
+en:
+  dogs:
+    error_component:
+      api_error: "API error: %{message} | Try again!"
+    image_component:
+      footer: "Fetched image of %{breed} from Dog API"
+    new_form_component:
+      label: Breed
