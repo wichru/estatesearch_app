@@ -39,3 +39,10 @@ group :development do
   gem 'rubocop-rspec', '~> 2.0'
   gem 'web-console'
 end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'simplecov', require: false
+  gem 'webdrivers'
+  gem 'webmock'
+end
