@@ -51,3 +51,7 @@ Upon loading the webpage, you'll see:
 
 1. **Text Input**: A text input field labeled "Breed" where you can type the name of the dog breed.
 2. **Submit Button**: Clicking this button fetches and displays an image of the entered dog breed asynchronously.
+
+### Demo app
+
+You can find a demo app deployed on Fly.io [here](https://dark-bird-5069.fly.dev/)

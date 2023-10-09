@@ -94,6 +94,8 @@ GEM
     date (3.3.3)
     diff-lcs (1.5.0)
     docile (1.4.0)
+    dockerfile-rails (1.5.10)
+      rails (>= 3.0.0)
     dry-core (1.0.0)
       concurrent-ruby (~> 1.0)
       zeitwerk (~> 2.6)
@@ -167,6 +169,8 @@ GEM
       net-protocol
     nio4r (2.5.9)
     nokogiri (1.15.4-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     parallel (1.23.0)
     parser (3.2.2.3)
@@ -275,6 +279,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sentry-rails (5.11.0)
+      railties (>= 5.0)
+      sentry-ruby (~> 5.11.0)
+    sentry-ruby (5.11.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -296,6 +305,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.6-x86_64-darwin)
+    sqlite3 (1.6.6-x86_64-linux)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     temple (0.10.2)
@@ -336,11 +346,13 @@ GEM
 
 PLATFORMS
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
   capybara
   cssbundling-rails
+  dockerfile-rails (>= 1.5)
   dry-struct
   factory_bot_rails
   faker
@@ -359,6 +371,8 @@ DEPENDENCIES
   rubocop-rails (~> 2.0)
   rubocop-rspec (~> 2.0)
   selenium-webdriver
+  sentry-rails (~> 5.11)
+  sentry-ruby (~> 5.11)
   simplecov
   slim-rails
   sprockets-rails
